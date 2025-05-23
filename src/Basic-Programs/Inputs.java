@@ -11,12 +11,15 @@ public class Inputs{
         System.out.println(salary);
 
         System.out.println("Enter the String");
-        String s1=input.next();
+        String s1=input.next();  //- It will take one word input till a space occurs
         System.out.println(s1);
 
         System.out.println("Enter the Double");
         double wages=input.nextDouble();
         System.out.println(wages);
 
+        System.out.println("Enter the String");
+        String s2=input.nextLine();  //-- It will take all string input including space.
+        System.out.println(s2);
     }
 } 
