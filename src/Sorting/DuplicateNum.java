@@ -2,14 +2,14 @@ package Sorting;
 
 public class DuplicateNum {
     public static void main(String[] args) {
-        int[]arr={1,3,2,2,4};
+        int[]arr={1,3,2,4,3};
         System.out.println(duplicatenum(arr));
     }
     static int duplicatenum(int[] arr){
-        int i=0;
+        int i=1;
 
         while(i<arr.length){
-            int current=arr[i]-1;
+            int current=arr[i];
             if(arr[i]<arr.length && arr[i]!=arr[current]){
 
                 swap(arr,i,current);
