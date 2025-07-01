@@ -4,12 +4,15 @@ public class BS {
 
 
     public static void main(String[] args) {
-        int[] nums={2,5,7,12,23,45,67,89,122,144,167,456};
-        int target=167;
+        int[] nums={3,3,3,3,3,3};
+        int target=3;
         System.out.println("Target found at="+BinarySearchM(nums,target));
     }
 
     private static int BinarySearchM(int[] nums, int target) {
+        if(nums.length==0){
+            return -1;
+        }
         int start=0;
         int end=nums.length-1;
         while(start<=end){
