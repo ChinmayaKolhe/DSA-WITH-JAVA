@@ -10,7 +10,7 @@ public class Rod_Cutting {
             return 0;
         }
 
-        int max_val = 0;
+        int max_val = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
             max_val = Math.max(max_val, price[i] + cutRod(price, n - i - 1));
@@ -21,7 +21,8 @@ public class Rod_Cutting {
 
 }
 
-//
+//dynamic programming
+
 //public class Rod_Cutting {
 //    public static void main(String[] args) {
 //        int[] price={1,5,8,9,10,17,17,20};
