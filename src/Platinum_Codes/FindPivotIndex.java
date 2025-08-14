@@ -16,7 +16,7 @@ public class FindPivotIndex {
         }
 
         for (int i = 0; i < n; i++) {
-            int leftSum = (i == 0) ? 0 : prefix[i - 1];
+            int leftSum = prefix[i]-nums[i];
             int rightSum = prefix[n - 1] - prefix[i];
 
             if (leftSum == rightSum) {
