@@ -1,6 +1,6 @@
 package Platinum_Codes.Strings;
 
-public class LPSArray {
+public class LPSArrayKMPAlgo {
     public static void main(String[] args) {
         String str = "ABCAB";
         String pattern = "AB";
