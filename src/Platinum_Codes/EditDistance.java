@@ -14,7 +14,7 @@ public class EditDistance {
 //    static int editDistanceDP(String word1,String word2,int len1,int len2){
 //        if(len1==0) return len2;
 //        if(len2==0) return len1;
-//        if(word1.charAt(len1)==word2.charAt(len2)){
+//        if(word1.charAt(len1-1)==word2.charAt(len2-1)){
 //            return editDistanceDP(word1,word2,len1-1,len2-1);
 //        }
 //        return 1+Math.min(editDistanceDP(word1,word2,len1-1,len2-1),
