@@ -14,6 +14,7 @@ public class Combinations {
                 System.out.println();
             }
         }
+
         for(int i=index;i<arr.length;i++){
              swap(arr,i,index);
              combination(arr,index+1);
