@@ -26,4 +26,5 @@ public class Combinations {
         arr[i]=arr[index];
         arr[index]=temp;
     }
+
 }
