@@ -10,6 +10,8 @@ public class AVLTree {
         tree.root=tree.insert(tree.root,40);
         tree.root=tree.insert(tree.root,50);
         tree.root=tree.insert(tree.root,25);
+        System.out.println("Tree=");
+        preorder(tree.root);
     }
     static class Node{
         int key,height;
@@ -40,7 +42,7 @@ public class AVLTree {
             return rightRotate(root);
         }
         //left rotation
-        if(balance<-1 && key>root.left.key){
+        if(balance<-1 && key>root.right.key){
             return leftRotate(root);
         }
         //left-right rotation
@@ -84,5 +86,12 @@ public class AVLTree {
             return 0;
         }
         return height(root.left)-height(root.right);
+    }
+    static void preorder(Node root){
+        if (root != null) {
+            System.out.print(root.key + " ");
+            preorder(root.left);
+            preorder(root.right);
+        }
     }
 }
