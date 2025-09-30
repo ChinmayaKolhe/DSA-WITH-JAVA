@@ -26,7 +26,7 @@ public class DijkstraAmbulance {
         PriorityQueue<Pair> pq = new PriorityQueue<>();
         pq.add(new Pair(0, source));
 
-        while (!pq.isEmpty()) {
+        while (!pq.isEmpty()){
             Pair current = pq.poll();
             int u = current.second;
             int d = current.first;
